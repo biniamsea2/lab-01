@@ -1,183 +1,231 @@
+
+/* mobile view*/
+
 body{
     margin: auto;
     width: 480px;
-  }
-  
-/* mobile view*/
+    margin-top:20px;
+    margin-bottom: 20px;
+}
 
-div:nth-child(1){
+#s2{
+    display: grid;
+    grid-template-areas: "header header "
+    "main main"
+    "section section"
+    "nav nav"
+    "article a2"
+    "s3 d2"
+    "footer footer";
+    width: 480px;
+    height: 250px;
+    text-align: center;
+    line-height: 250px;
+    background: rgb(230, 15, 201);
+    border: .5px solid rgb(255, 255, 255);
+}
+
+
+header{
     width: 480px;
     height: 75px;
     text-align: center;
+    grid-area: header;
     line-height: 75px;
     background: rgb(248, 108, 108);
-    display: block;  
+    /* display: block;   */
     border: .5px solid rgb(255, 255, 255);
 }
-div:nth-child(2){
+main{
     width: 480px;
     height: 150px;
     text-align: center;
+    grid-area: main;
     line-height: 150px;
     background: rgb(253, 218, 22);
-    display: block;  
+    /* display: block;   */
     border: .5px solid rgb(255, 255, 255);
 }
-div:nth-child(3){
+section{
     width: 480px;
     height: 125px;
     text-align: center;
+    grid-area: section;
     line-height: 125px;
     background: rgb(87, 253, 22);
-    display: block;  
+    /* display: block;   */
     border: .5px solid rgb(255, 255, 255);
 }
-div:nth-child(4){
+nav{
     width: 480px;
     height: 125px;
     text-align: center;
+    grid-area: nav;
     line-height: 125px;
     background: rgb(22, 253, 203);
-    display: block;  
+    /* display: block;   */
     border: .5px solid rgb(255, 255, 255);
 }
 
-div:nth-child(5){
+article{
     width: 240px;
     height: 250px;
     text-align: center;
     line-height: 250px;
     background: rgb(15, 55, 230);
-    display: block;  
-    float: left;
+    grid-area: article;
     border: .5px solid rgb(255, 255, 255);
 }
-div:nth-child(6){
+#a2{
     width: 240px;
     height: 250px;
     text-align: center;
     line-height: 250px;
     background: rgb(126, 15, 230);
-    display: block;  
-    float: left;
+    grid-area: a2;
     border: .5px solid rgb(255, 255, 255);
 }
-div:nth-child(7){
+#s3{
     width: 240px;
     height: 250px;
     text-align: center;
     line-height: 250px;
     background: rgb(230, 15, 201);
-    display: block;  
-    float: left;
+    grid-area: s3;
     border: .5px solid rgb(255, 255, 255);
 }
-div:nth-child(8){
+#d2{
     width: 240px;
     height: 250px;
     text-align: center;
     line-height: 250px;
     background: rgb(230, 15, 87);
-    display: block;  
-    float: left;
+    grid-area: d2;
     border: .5px solid rgb(255, 255, 255);
 }
-div:nth-child(9){
+footer{
     width: 480px;
     height: 80px;
     text-align: center;
     line-height: 80px;
     background: rgb(245, 130, 23);
-    display: block;  
-    float: left;
+    grid-area: footer;
     border: .5px solid rgb(255, 255, 255);
 }
 
-@media only screen and (min-width: 768px){
+
+
+/* Desktop view */
+
+
+
+
+@media only screen and (min-width: 780px){
 body{
     margin: auto;
-    width: 960px;
+    width: 760px;
+    margin-top:20px;
+    margin-bottom: 20px;
+}
+
+
+#s2{
+    display: grid;
+    grid-template-areas:  "header header "
+    "main main"
+    "section section"
+    "nav nav"
+    "article a2"
+    "s3 d2"
+    "footer footer";
+    width: 480px;
+    height: 250px;
+    text-align: center;
+    line-height: 250px;
+    background: rgb(230, 15, 201);
+    border: .5px solid rgb(255, 255, 255);
 }
       
-div:nth-child(1){
+header {
     width: 960px;
     height: 100px;
     text-align: center;
+    grid-area: header;
     line-height: 100px;
     background: rgb(228, 40, 40);
     border: .5px solid rgb(255, 255, 255);
 }
-div:nth-child(2){
+main{
     width: 200px;
     height: 600px;
     text-align: center;
+    grid-area: main;
     line-height: 600px;
     background: rgb(58, 161, 202);
-    float:left;
     border: .5px solid rgb(255, 255, 255);
 }
-div:nth-child(3){
+section{
     width: 380px;
     height: 200px;
     text-align: center;
+    grid-area: section;
     line-height: 200px;
-    background: rgb(253, 22, 214);
-    float:left;
+    background: rgb(253, 22, 214);   
     border: .5px solid rgb(255, 255, 255);
 }
-div:nth-child(4){
+nav{
     width: 380px;
     height: 200px;
     text-align: center;
+    grid-area: nav;
     line-height: 200px;
     background: rgb(49, 253, 22);
-    float: left;
     border: .5px solid rgb(255, 255, 255);
 }
     
-div:nth-child(5){
+#article{
     width: 190px;
     height: 250px;
     text-align: center;
+    grid-area: article;
     line-height: 250px;
     background: rgb(17, 17, 17);
-    float: left;
     border: .5px solid rgb(255, 255, 255);
 }
-div:nth-child(6){
+#a2{
     width: 190px;
     height: 250px;
     text-align: center;
+    grid-area: a2;
     line-height: 250px;
     background: rgb(138, 135, 141);
-    float: left;
     border: .5px solid rgb(255, 255, 255);
 }
-div:nth-child(7){
+#s3{
     width: 190px;
     height: 250px;
     text-align: center;
+    grid-area: s3;
     line-height: 250px;
     background: rgb(230, 162, 15);
-    float: left;
     border: .5px solid rgb(255, 255, 255);
 }
-div:nth-child(8){
+#d2{
     width: 190px;
     height: 250px;
     text-align: center;
+    grid-area: d2;
     line-height: 250px;
     background: rgb(173, 101, 125);
-    float: left;
     border: .5px solid rgb(255, 255, 255);
 }
-div:nth-child(9){
+footer{
     width: 760px;
     height: 150px;
     text-align: center;
+    grid-area: footer;
     line-height: 150px;
     background: rgb(23, 245, 215);
-    float: left;
     border: .5px solid rgb(255, 255, 255);
 }    
 }

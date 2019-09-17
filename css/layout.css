@@ -17,12 +17,7 @@ body{
     "article a2"
     "s3 d2"
     "footer footer";
-    width: 480px;
-    height: 250px;
-    text-align: center;
-    line-height: 250px;
-    background: rgb(230, 15, 201);
-    border: .5px solid rgb(255, 255, 255);
+    
 }
 
 
@@ -115,35 +110,28 @@ footer{
 
 
 
-/* Desktop view */
+/* Tablet view */
 
 
 
 
-@media only screen and (min-width: 780px){
+@media only screen and (min-width: 700px){
 body{
     margin: auto;
     width: 760px;
-    margin-top:20px;
+    margin-top:60px;
     margin-bottom: 20px;
+    /* margin-left:250px; */
 }
 
 
 #s2{
     display: grid;
-    grid-template-areas:  "header header "
-    "main main"
-    "section section"
-    "nav nav"
-    "article a2"
-    "s3 d2"
-    "footer footer";
-    width: 480px;
-    height: 250px;
-    text-align: center;
-    line-height: 250px;
-    background: rgb(230, 15, 201);
-    border: .5px solid rgb(255, 255, 255);
+    grid-template-areas:  
+    "header header header header header header header header header header header" 
+    "main main main section section section section nav nav nav nav" 
+    "main main main article article a2 a2 s3 s3 d2 d2"
+    "main main main footer footer footer footer footer footer footer footer";
 }
       
 header {
@@ -152,7 +140,7 @@ header {
     text-align: center;
     grid-area: header;
     line-height: 100px;
-    background: rgb(228, 40, 40);
+    background: rgb(8, 46, 216);
     border: .5px solid rgb(255, 255, 255);
 }
 main{
@@ -161,7 +149,7 @@ main{
     text-align: center;
     grid-area: main;
     line-height: 600px;
-    background: rgb(58, 161, 202);
+    background: rgb(90, 238, 31);
     border: .5px solid rgb(255, 255, 255);
 }
 section{
@@ -170,7 +158,7 @@ section{
     text-align: center;
     grid-area: section;
     line-height: 200px;
-    background: rgb(253, 22, 214);   
+    background: rgb(253, 22, 53);   
     border: .5px solid rgb(255, 255, 255);
 }
 nav{
@@ -179,17 +167,17 @@ nav{
     text-align: center;
     grid-area: nav;
     line-height: 200px;
-    background: rgb(49, 253, 22);
+    background: rgb(249, 253, 22);
     border: .5px solid rgb(255, 255, 255);
 }
     
-#article{
+article{
     width: 190px;
     height: 250px;
     text-align: center;
     grid-area: article;
     line-height: 250px;
-    background: rgb(17, 17, 17);
+    background: rgb(148, 5, 243);
     border: .5px solid rgb(255, 255, 255);
 }
 #a2{
@@ -198,7 +186,7 @@ nav{
     text-align: center;
     grid-area: a2;
     line-height: 250px;
-    background: rgb(138, 135, 141);
+    background: rgb(32, 30, 32);
     border: .5px solid rgb(255, 255, 255);
 }
 #s3{
@@ -207,7 +195,7 @@ nav{
     text-align: center;
     grid-area: s3;
     line-height: 250px;
-    background: rgb(230, 162, 15);
+    background: rgb(22, 230, 15);
     border: .5px solid rgb(255, 255, 255);
 }
 #d2{
@@ -216,7 +204,7 @@ nav{
     text-align: center;
     grid-area: d2;
     line-height: 250px;
-    background: rgb(173, 101, 125);
+    background: rgb(250, 11, 210);
     border: .5px solid rgb(255, 255, 255);
 }
 footer{
@@ -225,7 +213,114 @@ footer{
     text-align: center;
     grid-area: footer;
     line-height: 150px;
-    background: rgb(23, 245, 215);
+    background: rgb(87, 143, 135);
     border: .5px solid rgb(255, 255, 255);
 }    
 }
+
+
+/* Desktop */
+
+
+@media only screen and (min-width: 70em){
+    body{
+        margin: auto;
+        width: 760px;
+        margin-top:60px;
+        margin-bottom: 20px;
+    }
+    
+    
+    #s2{
+        display: grid;
+        grid-template-areas:  
+        "header header header header header header header header header header header" 
+        "main main main section section section section nav nav nav nav" 
+        "main main main article article a2 a2 s3 s3 d2 d2"
+        "main main main footer footer footer footer footer footer footer footer";
+        
+    }
+          
+    header {
+        width: 960px;
+        height: 100px;
+        text-align: center;
+        grid-area: header;
+        line-height: 100px;
+        background: rgb(231, 44, 44);
+        border: .5px solid rgb(255, 255, 255);
+    }
+    main{
+        width: 200px;
+        height: 600px;
+        text-align: center;
+        grid-area: main;
+        line-height: 600px;
+        background: rgb(58, 161, 202);
+        border: .5px solid rgb(255, 255, 255);
+    }
+    section{
+        width: 380px;
+        height: 200px;
+        text-align: center;
+        grid-area: section;
+        line-height: 200px;
+        background: rgb(253, 22, 214);   
+        border: .5px solid rgb(255, 255, 255);
+    }
+    nav{
+        width: 380px;
+        height: 200px;
+        text-align: center;
+        grid-area: nav;
+        line-height: 200px;
+        background: rgb(49, 253, 22);
+        border: .5px solid rgb(255, 255, 255);
+    }
+        
+    article{
+        width: 190px;
+        height: 250px;
+        text-align: center;
+        grid-area: article;
+        line-height: 250px;
+        background: rgb(209, 152, 152);
+        border: .5px solid rgb(255, 255, 255);
+    }
+    #a2{
+        width: 190px;
+        height: 250px;
+        text-align: center;
+        grid-area: a2;
+        line-height: 250px;
+        background: rgb(138, 135, 141);
+        border: .5px solid rgb(255, 255, 255);
+    }
+    #s3{
+        width: 190px;
+        height: 250px;
+        text-align: center;
+        grid-area: s3;
+        line-height: 250px;
+        background: rgb(230, 162, 15);
+        border: .5px solid rgb(255, 255, 255);
+    }
+    #d2{
+        width: 190px;
+        height: 250px;
+        text-align: center;
+        grid-area: d2;
+        line-height: 250px;
+        background: rgb(173, 101, 125);
+        border: .5px solid rgb(255, 255, 255);
+    }
+    footer{
+        width: 760px;
+        height: 150px;
+        text-align: center;
+        grid-area: footer;
+        line-height: 150px;
+        background: rgb(23, 245, 215);
+        border: .5px solid rgb(255, 255, 255);
+    }    
+    }
